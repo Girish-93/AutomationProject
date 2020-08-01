@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RegressionSuite parallel=tests]">
+  <test name="SanityTest(failed)">
+    <classes>
+      <class name="com.test.GoogleTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.test.GoogleTest -->
+      <class name="com.test.GoogleTitleTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="googleTitleTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.test.GoogleTitleTest -->
+      <class name="com.test.testNGBasics">
+        <methods>
+          <include name="logOut"/>
+          <include name="enterUrl"/>
+          <include name="login"/>
+          <include name="closeBrowser"/>
+          <include name="setUp"/>
+          <include name="deletAllCookies"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.test.testNGBasics -->
+    </classes>
+  </test> <!-- SanityTest(failed) -->
+</suite> <!-- Failed suite [RegressionSuite parallel=tests] -->
